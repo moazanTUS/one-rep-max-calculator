@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css"/> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+ <script src="https://kit.fontawesome.com/f85911a0dd.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <title>ONE REP MAX CALCULATOR</title>
+    <script  src="JS/MAIN.JS"></script>
+    <style>
+      h1, button{
+        font-family: "Allerta Stencil", Sans-serif;
+      }
+      </style>
+    
+</head>
+<body>
+  <p><button onclick="document.getElementById('calculateonerepmax').style.display='block'" class="w3-button w3-border w3-display-middle w3-xxxlarge w3-round-xxlarge w3-border-red w3-mobile w3-black" style="white-space: normal;">CALCULATE ONE REP MAX</button></p>
+  <div id="calculateonerepmax" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-2018-warm-sand">
+       <b> <span onclick="document.getElementById('calculateonerepmax').style.display='none'" class="w3-button w3-display-topright w3-small">x</span></b>
+     
+       <h1 class="w3-center"><i class="fa-solid fa-dumbbell fa-bounce fa-xl"></i>ONE REP MAX CALCULATOR<i class="fa-solid fa-dumbbell fa-bounce fa-xl"></i></h1>
+      </div>
+      <div class="w3-container w3-metro-light-blue">
+      
+       <b> <p>PLEASE FILL IN THIS FORM:</p></b>
+        <form >
+      
+          <i class="fa-solid fa-person-walking "></i>
+         <b><label for="fname">EXERCISE:</label></b> <br>
+         <tr>
+          <td colspan="2" id="  exercise">
+          <input  type="radio"  name="exercises" id="squat">Squat
+          <input type="radio" name="exercises" id="bench"> Bench       
+            <input  type="radio" name="exercises" id="deadlift">Deadlift    
+            </td>
+            </tr>
+            <br><br>
+             
+            <i class="fa-solid fa-weight-hanging"></i> <b><label for="fname">WEIGHT LIFTED:</label></b><br>
+               <p><input type="number" class="w3-input w3-padding-10 w3-border"  placeholder="Weight Lifted e.g.100"  name="weight" id="weight"></p>
+      
+               <i class="fa-solid fa-scale-unbalanced-flip"></i>
+              <b> <label for="fname">UNIT:</label></b><br>
+         <td> <select  id="select">
+          <option value="choose" id="choose"> Please Choose A Unit </option>
+        <option value="lbs" id="lbs">Lbs</option>
+      <option value="kgs" id="kgs">Kgs</option> </select></td> <br><br>
+        
+      <i class="fa-solid fa-repeat"></i>
+        <b>  <label for="fname">REPS:</label></b><br>
+          <p><input class="w3-input w3-padding-10 w3-border" type="number" placeholder="Number Of Repetitions, Range 1 - 35" required name="reps" id="reps"></p>
+          
+          <tr>
+          </tr>   <br>	<strong><p  class="w3-center w3-xlarge" id= "resultText"></p></strong>
+          <div class="w3-center">
+            <div class="w3-bar">
+             <input  class="w3-center w3-xlarge w3-round w3-black w3-large w3-hover-opacity" type="button" id="reset" value="RESET">
+            <input   class="w3-center w3-xlarge w3-black w3-round-large w3-hover-opacity" type="button" id="calculate" value="CALCULATE">
+       </div>
+       </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
